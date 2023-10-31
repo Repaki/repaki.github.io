@@ -29,7 +29,7 @@ body {
 }
 
 .links > ul > li {
-    margin: 20px 0;
+    margin: 2em 0;
 }
 
 .links > ul > li > a {
@@ -42,4 +42,46 @@ body {
 
 .links > ul > li > a:hover {
     color: red;
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+    .links > h1 {
+        font-size: 2em;
+    }
+
+    .links > ul > li {
+        margin: 2em 0;
+    }
+
+    .links > ul > li > a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .links > h1 {
+        font-size: 3em;
+    }
+
+    .links > ul > li {
+        margin: 2em 0;
+    }
+
+    .links > ul > li > a {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 767px) {
+    .links > h1 {
+        font-size: 5em;
+    }
+
+    .links > ul > li {
+        margin: 4em 0;
+    }
+
+    .links > ul > li > a {
+        font-size: 3em;
+    }
 }
