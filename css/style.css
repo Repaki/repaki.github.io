@@ -1,0 +1,45 @@
+body {
+    all: unset;
+    font-family: sans-serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.links {
+    padding: 5em 10em;
+    text-align: center;
+    align-self: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.links > ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.links > ul > li {
+    margin: 20px 0;
+}
+
+.links > ul > li > a {
+    text-decoration: none;
+}
+
+.links > ul > li > a:link, a:visited {
+    color: blue;
+}
+
+.links > ul > li > a:hover {
+    color: red;
+}
