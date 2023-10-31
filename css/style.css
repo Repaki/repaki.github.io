@@ -1,6 +1,7 @@
 body {
     all: unset;
     font-family: sans-serif;
+    background: radial-gradient(circle at top left, dimgray, orange, orangered);
 }
 
 .content {
@@ -11,14 +12,18 @@ body {
     height: 100vh;
 }
 
-.links {
-    padding: 5em 10em;
-    text-align: center;
-    align-self: center;
+.card {
+    background-color: color-mix(in srgb, black, transparent 75%);
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 20px;
+}
+
+.links {
+    padding: 5em 10em;
+    text-align: center;
+    align-self: center;
 }
 
 .links > ul {
@@ -29,7 +34,7 @@ body {
 }
 
 .links > ul > li {
-    margin: 2em 0;
+    margin: 1.5em 0;
 }
 
 .links > ul > li > a {
@@ -37,34 +42,21 @@ body {
 }
 
 .links > ul > li > a:link, a:visited {
-    color: blue;
+    color: black;
 }
 
 .links > ul > li > a:hover {
-    color: red;
+    color: orangered;
+    text-shadow: black 1px 1px 2px;
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
-    .links > h1 {
-        font-size: 2em;
-    }
-
-    .links > ul > li {
-        margin: 2em 0;
-    }
-
-    .links > ul > li > a {
-        font-size: 1em;
-    }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
     .links > h1 {
         font-size: 3em;
     }
 
     .links > ul > li {
-        margin: 2em 0;
+        margin: 2.5em 0;
     }
 
     .links > ul > li > a {
@@ -72,9 +64,23 @@ body {
     }
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 767px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
     .links > h1 {
-        font-size: 5em;
+        font-size: 4em;
+    }
+
+    .links > ul > li {
+        margin: 2em 0;
+    }
+
+    .links > ul > li > a {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .links > h1 {
+        font-size: 6em;
     }
 
     .links > ul > li {
@@ -83,5 +89,19 @@ body {
 
     .links > ul > li > a {
         font-size: 3em;
+    }
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 319px) {
+    .links > h1 {
+        font-size: 7em;
+    }
+
+    .links > ul > li {
+        margin: 5em 0;
+    }
+
+    .links > ul > li > a {
+        font-size: 4em;
     }
 }
