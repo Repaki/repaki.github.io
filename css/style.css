@@ -1,7 +1,13 @@
 body {
     all: unset;
     font-family: sans-serif;
-    background: radial-gradient(circle at top left, dimgray, orange, orangered);
+    /* background-image: url(../images/avatar.png); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background: radial-gradient(circle at top left, dimgray, orange, orangered); */
+    background: radial-gradient(circle at top left, #1bb56d, #38b77c, #54b789, #71ba99, #c76d10, #b04100, #7d2017, #912900);
+    background-size: 200% 200%;
+    animation: gradient-animation 15s ease-in-out infinite;
 }
 
 .content {
@@ -18,27 +24,51 @@ body {
     border-style: solid;
     border-color: black;
     border-radius: 20px;
+    padding: 3em 10em;
+    box-shadow: 0px 0px 10px black;
+    backdrop-filter: blur(30px);
+}
+
+.name-and-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-and-photo > h1 {
+    text-shadow: 0px 0px 10px white;
+    font-size: 3em;
+    margin: 0.2em;
+}
+
+.name-and-photo > img {
+    width: 9em;
+    height: 9em;
 }
 
 .links {
-    padding: 5em 10em;
+    display: flex;
     text-align: center;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .links > ul {
-    margin-left: 0;
-    padding-left: 0;
+    margin: 0em;
+    padding: 0em;
     list-style-position: inside;
     list-style-type: none;
 }
 
 .links > ul > li {
     margin: 1.5em 0;
+    font-size: 1em;
 }
 
 .links > ul > li > a {
     text-decoration: none;
+    text-shadow: 0px 0px 10px white;
 }
 
 .links > ul > li > a:link, a:visited {
@@ -51,8 +81,13 @@ body {
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
-    .links > h1 {
+    .name-and-photo > h1 {
         font-size: 3em;
+    }
+
+    .name-and-photo > img {
+        width: 9em;
+        height: 9em;
     }
 
     .links > ul > li {
@@ -65,8 +100,13 @@ body {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
-    .links > h1 {
+    .name-and-photo > h1 {
         font-size: 4em;
+    }
+
+    .name-and-photo > img {
+        width: 12em;
+        height: 12em;
     }
 
     .links > ul > li {
@@ -79,8 +119,13 @@ body {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-    .links > h1 {
+    .name-and-photo > h1 {
         font-size: 6em;
+    }
+
+    .name-and-photo > img {
+        width: 18em;
+        height: 18em;
     }
 
     .links > ul > li {
@@ -93,8 +138,13 @@ body {
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 319px) {
-    .links > h1 {
+    .name-and-photo > h1 {
         font-size: 7em;
+    }
+
+    .name-and-photo > img {
+        width: 21em;
+        height: 21em;
     }
 
     .links > ul > li {
@@ -103,5 +153,17 @@ body {
 
     .links > ul > li > a {
         font-size: 4em;
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
