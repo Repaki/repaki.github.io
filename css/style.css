@@ -80,7 +80,7 @@ body {
 
 .links > ul > li > a:hover {
     color: orangered;
-    text-shadow: black 1px 1px 2px;
+    text-shadow: 0px 0px 10px black;
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
