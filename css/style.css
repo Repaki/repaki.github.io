@@ -8,7 +8,7 @@ body {
     /* Old Gradient */
     /* background: radial-gradient(circle at top left, dimgray, orange, orangered); */
     /* Animated Gradient */
-    background: radial-gradient(circle at top left, #1bb56d, #38b77c, #54b789, #71ba99, #c76d10, #b04100, #7d2017, #912900);
+    background: radial-gradient(circle at top left, #5e997c, #65a587, #71ba99, #77c4A0, #c76d10, #b04100, #7d2017, #912900);
     background-size: 200% 200%;
     animation: gradient-animation 15s ease-in-out infinite;
 }
