@@ -1,10 +1,13 @@
 body {
     all: unset;
     font-family: sans-serif;
+    /* Background Gmage */
     /* background-image: url(../images/avatar.png); */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
+    /* Old Gradient */
     /* background: radial-gradient(circle at top left, dimgray, orange, orangered); */
+    /* Animated Gradient */
     background: radial-gradient(circle at top left, #1bb56d, #38b77c, #54b789, #71ba99, #c76d10, #b04100, #7d2017, #912900);
     background-size: 200% 200%;
     animation: gradient-animation 15s ease-in-out infinite;
