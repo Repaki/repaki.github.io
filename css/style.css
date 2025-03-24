@@ -1,6 +1,7 @@
 body {
     all: unset;
     font-family: sans-serif;
+    color: black;
     /* Background Gmage */
     /* background-image: url(../images/avatar.png); */
     /* background-size: cover; */
@@ -18,18 +19,33 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    margin: 10vh 0;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 50vw;
     background-color: color-mix(in srgb, black, transparent 75%);
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 20px;
-    padding: 3em 10em;
+    padding: 3rem 10rem;
     box-shadow: 0px 0px 10px black;
     backdrop-filter: blur(30px);
+}
+
+.card hr { /* Any child hr element that is inside .card will be selected */
+    width: 50%;
+    height: 0.1rem;
+    background-color: color-mix(in srgb, black, transparent 75%);
+    border: none;
+    margin: 1.25rem 0rem;
 }
 
 .name-and-photo {
@@ -37,36 +53,115 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .name-and-photo > h1 {
     text-shadow: 0px 0px 10px white;
-    font-size: 3em;
-    margin: 0.2em;
+    font-size: 3rem;
+    margin: 0rem 0rem 0.5rem 0rem;
 }
 
 .name-and-photo > img {
-    width: 9em;
-    height: 9em;
+    width: 15rem;
+    height: auto;
+}
+
+.artist > span {
+    color: #0D0D0D;
+    text-shadow: 0px 0px 10px white;
+    font-size: 0.75rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.artist > span > a {
+    color: #0D0D0D;
+    text-shadow: 0px 0px 10px white;
+    font-size: 0.75rem;
+}
+
+.artist > span > a:link, a:visited {
+    color: black;
+}
+
+.artist > span > a:hover {
+    color: orangered;
+    text-shadow: 0px 0px 10px black;
+}
+
+.refsheet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.refsheet-header > h1 {
+    text-shadow: 0px 0px 10px white;
+    font-size: 3rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.refsheet-header > h4 {
+    text-shadow: 0px 0px 10px white;
+    font-size: 0.75rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.refsheet > h2 {
+    text-shadow: 0px 0px 10px white;
+    font-size: 2rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.refsheet > h3 {
+    text-shadow: 0px 0px 10px white;
+    font-size: 1.25rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.refsheet > a > img {
+    width: 35rem;
+    height: auto;
+}
+
+.refsheet-footer > a > h3 {
+    text-shadow: 0px 0px 10px white;
+    font-size: 1.25rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.refsheet-footer > a:link, a:visited {
+    color: black;
+}
+
+.refsheet-footer > a:hover {
+    color: orangered;
+    text-shadow: 0px 0px 10px black;
 }
 
 .links {
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .links > ul {
-    margin: 0em;
-    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 0rem;
+    padding: 0rem;
     list-style-position: inside;
     list-style-type: none;
 }
 
 .links > ul > li {
-    margin: 1.25em 0;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 .links > ul > li > a {
@@ -84,78 +179,242 @@ body {
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+    .card {
+        max-width: 50vw;
+    }
+
+    .card hr {
+        height: 0.15rem;
+        margin: 2rem 0rem;
+    }
+
     .name-and-photo > h1 {
-        font-size: 3em;
+        font-size: 3rem;
+        margin: 0rem 0rem 0.75rem 0rem;
     }
 
     .name-and-photo > img {
-        width: 9em;
-        height: 9em;
+        width: 15rem;
     }
 
-    .links > ul > li {
-        margin: 2.5em 0;
+    .artist > span {
+        font-size: 1rem;
+    }
+
+    .artist > span > a {
+        font-size: 1rem;
+    }
+
+    .refsheet-header > h1 {
+        font-size: 3rem;
+    }
+
+    .refsheet-header > h4 {
+        font-size: 1rem;
+    }
+
+    .refsheet > h2 {
+        font-size: 2rem;
+    }
+
+    .refsheet > h3 {
+        font-size: 1.5rem;
+    }
+
+    .refsheet > a > img {
+        width: 40rem;
+    }
+
+    .refsheet-footer > a {
+        font-size: 1.5rem;
+    }
+
+    .links > ul {
+        gap: 2rem;
     }
 
     .links > ul > li > a {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .card {
+        max-width: 50vw;
+    }
+
+    .card hr {
+        height: 0.25rem;
+        margin: 3rem 0rem;
+    }
+
     .name-and-photo > h1 {
-        font-size: 4em;
+        font-size: 4rem;
+        margin: 0rem 0rem 1rem 0rem;
     }
 
     .name-and-photo > img {
-        width: 12em;
-        height: 12em;
+        width: 20rem;
     }
 
-    .links > ul > li {
-        margin: 2em 0;
+    .artist > span {
+        font-size: 1.5rem;
+    }
+
+    .artist > span > a {
+        font-size: 1.5rem;
+    }
+
+    .refsheet-header > h1 {
+        font-size: 4rem;
+    }
+
+    .refsheet-header > h4 {
+        font-size: 1.5rem;
+    }
+
+    .refsheet > h2 {
+        font-size: 3rem;
+    }
+
+    .refsheet > h3 {
+        font-size: 2rem;
+    }
+
+    .refsheet > a > img {
+        width: 45rem;
+    }
+
+    .refsheet-footer > a {
+        font-size: 2rem;
+    }
+
+    .links > ul {
+        gap: 3rem;
     }
 
     .links > ul > li > a {
-        font-size: 2em;
+        font-size: 2rem;
     }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .card {
+        max-width: 50vw;
+    }
+
+    .card hr {
+        height: 0.3rem;
+        margin: 4rem 0rem;
+    }
+
     .name-and-photo > h1 {
-        font-size: 6em;
+        font-size: 6rem;
+        margin: 0rem 0rem 1.5rem 0rem;
     }
 
     .name-and-photo > img {
-        width: 18em;
-        height: 18em;
+        width: 25rem;
     }
 
-    .links > ul > li {
-        margin: 4em 0;
+    .artist > span {
+        font-size: 2.5rem;
+    }
+
+    .artist > span > a {
+        font-size: 2.5rem;
+    }
+
+    .refsheet-header > h1 {
+        font-size: 6rem;
+    }
+
+    .refsheet-header > h4 {
+        font-size: 2.5rem;
+    }
+
+    .refsheet > h2 {
+        font-size: 5rem;
+    }
+
+    .refsheet > h3 {
+        font-size: 3rem;
+    }
+
+    .refsheet > a > img {
+        width: 40rem;
+    }
+
+    .refsheet-footer > a {
+        font-size: 3rem;
+    }
+
+    .links > ul {
+        gap: 4rem;
     }
 
     .links > ul > li > a {
-        font-size: 3em;
+        font-size: 3rem;
     }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 319px) {
+    .card {
+        max-width: 50vw;
+    }
+
+    .card hr {
+        height: 0.25rem;
+        margin: 5rem 0rem;
+    }
+
     .name-and-photo > h1 {
-        font-size: 7em;
+        font-size: 7rem;
+        margin: 0rem 0rem 2rem 0rem;
     }
 
     .name-and-photo > img {
-        width: 21em;
-        height: 21em;
+        width: 30rem;
     }
 
-    .links > ul > li {
-        margin: 5em 0;
+    .artist > span {
+        font-size: 2.5rem;
+    }
+
+    .artist > span > a {
+        font-size: 2.5rem;
+    }
+
+    .refsheet-header > h1 {
+        font-size: 7rem;
+    }
+
+    .refsheet-header > h4 {
+        font-size: 2.5rem;
+    }
+
+    .refsheet > h2 {
+        font-size: 5rem;
+    }
+
+    .refsheet > h3 {
+        font-size: 3rem;
+    }
+
+    .refsheet > a > img {
+        width: 40rem;
+    }
+
+    .refsheet-footer > a {
+        font-size: 4rem;
+    }
+
+    .links > ul {
+        gap: 5rem;
     }
 
     .links > ul > li > a {
-        font-size: 4em;
+        font-size: 4rem;
     }
 }
 
