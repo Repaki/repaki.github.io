@@ -317,7 +317,7 @@ body {
     }
 
     .card hr {
-        margin: 4rem 0rem;
+        margin: 3rem 0rem;
     }
 
     .name-and-photo > h1 {
@@ -366,7 +366,7 @@ body {
     }
 
     .links > ul {
-        gap: 4rem;
+        gap: 3rem;
     }
 
     .links > ul > li > a {
@@ -380,7 +380,7 @@ body {
     }
 
     .card hr {
-        margin: 5rem 0rem;
+        margin: 4rem 0rem;
     }
 
     .name-and-photo > h1 {
@@ -429,7 +429,7 @@ body {
     }
 
     .links > ul {
-        gap: 5rem;
+        gap: 4rem;
     }
 
     .links > ul > li > a {
