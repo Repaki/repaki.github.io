@@ -29,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 50vw;
+    max-width: 30vw;
     background-color: color-mix(in srgb, black, transparent 75%);
     border-width: 1px;
     border-style: solid;
@@ -42,9 +42,7 @@ body {
 
 .card hr { /* Any child hr element that is inside .card will be selected */
     width: 50%;
-    height: 0.1rem;
-    background-color: color-mix(in srgb, black, transparent 75%);
-    border: none;
+    border: thin solid color-mix(in srgb, black, transparent 75%);
     margin: 1.25rem 0rem;
 }
 
@@ -59,24 +57,33 @@ body {
 .name-and-photo > h1 {
     text-shadow: 0px 0px 10px white;
     font-size: 3rem;
-    margin: 0rem 0rem 0.5rem 0rem;
+    margin: 0rem 0rem 1rem 0rem;
 }
 
 .name-and-photo > img {
     width: 15rem;
     height: auto;
+    /* mask-image:
+        linear-gradient(to top,  transparent 0%, black 7.5%),
+        linear-gradient(to bottom,  transparent 0%, black 7.5%),
+        linear-gradient(to left,  transparent 0%, black 7.5%),
+        linear-gradient(to right,  transparent 0%, black 7.5%),
+        radial-gradient(circle closest-corner at center, black 95%, transparent 100%);
+    mask-position: center;
+    mask-composite: intersect; */
 }
 
-.artist > span {
+.artist {
     color: #0D0D0D;
     text-shadow: 0px 0px 10px white;
-    font-size: 0.75rem;
     margin: 0.5rem 0rem 0rem 0rem;
 }
 
+.artist > span {
+    font-size: 0.75rem;
+}
+
 .artist > span > a {
-    color: #0D0D0D;
-    text-shadow: 0px 0px 10px white;
     font-size: 0.75rem;
 }
 
@@ -126,7 +133,7 @@ body {
     height: auto;
 }
 
-.refsheet-footer > a > h3 {
+.refsheet-footer > a {
     text-shadow: 0px 0px 10px white;
     font-size: 1.25rem;
     margin: 0rem 0rem 0.5rem 0rem;
@@ -184,7 +191,6 @@ body {
     }
 
     .card hr {
-        height: 0.15rem;
         margin: 2rem 0rem;
     }
 
@@ -195,6 +201,10 @@ body {
 
     .name-and-photo > img {
         width: 15rem;
+    }
+
+    .artist {
+        margin: 0.5rem 0rem 0rem 0rem;
     }
 
     .artist > span {
@@ -244,7 +254,6 @@ body {
     }
 
     .card hr {
-        height: 0.25rem;
         margin: 3rem 0rem;
     }
 
@@ -255,6 +264,10 @@ body {
 
     .name-and-photo > img {
         width: 20rem;
+    }
+
+    .artist {
+        margin: 0.5rem 0rem 0rem 0rem;
     }
 
     .artist > span {
@@ -282,7 +295,7 @@ body {
     }
 
     .refsheet > a > img {
-        width: 45rem;
+        width: 40rem;
     }
 
     .refsheet-footer > a {
@@ -304,7 +317,6 @@ body {
     }
 
     .card hr {
-        height: 0.3rem;
         margin: 4rem 0rem;
     }
 
@@ -317,12 +329,16 @@ body {
         width: 25rem;
     }
 
+    .artist {
+        margin: 0.5rem 0rem 0rem 0rem;
+    }
+
     .artist > span {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .artist > span > a {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .refsheet-header > h1 {
@@ -330,7 +346,7 @@ body {
     }
 
     .refsheet-header > h4 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .refsheet > h2 {
@@ -364,7 +380,6 @@ body {
     }
 
     .card hr {
-        height: 0.25rem;
         margin: 5rem 0rem;
     }
 
@@ -375,6 +390,10 @@ body {
 
     .name-and-photo > img {
         width: 30rem;
+    }
+
+    .artist {
+        margin: 1rem 0rem 0rem 0rem;
     }
 
     .artist > span {
