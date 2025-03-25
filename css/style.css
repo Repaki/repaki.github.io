@@ -14,6 +14,39 @@ body {
     animation: gradient-animation 15s ease-in-out infinite;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.75rem;
+}
+
+h5 {
+    font-size: 0.5rem;
+}
+
+a, h1, h2, h3, h4, h5 {
+    text-shadow: 0px 0px 10px white;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: orangered;
+    text-shadow: 0px 0px 10px black;
+}
+
 .content {
     display: flex;
     align-items: center;
@@ -55,12 +88,10 @@ body {
 }
 
 .card-item-name-and-photo > h1 {
-    text-shadow: 0px 0px 10px white;
-    font-size: 3rem;
     margin: 0rem 0rem 1rem 0rem;
 }
 
-.card-item-name-and-photo > img {
+.card-item-name-and-photo > picture > img {
     width: 15rem;
     height: auto;
     /* mask-image:
@@ -73,27 +104,23 @@ body {
     mask-composite: intersect; */
 }
 
-.artist {
+.card-item-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: #0D0D0D;
     text-shadow: 0px 0px 10px white;
     margin: 0.5rem 0rem 0rem 0rem;
 }
 
-.artist > span {
+.card-item-information > span {
     font-size: 0.75rem;
 }
 
-.artist > span > a {
+.card-item-information > span > a {
     font-size: 0.75rem;
-}
-
-.artist > span > a:link, a:visited {
-    color: black;
-}
-
-.artist > span > a:hover {
-    color: orangered;
-    text-shadow: 0px 0px 10px black;
 }
 
 .card-item {
@@ -105,53 +132,37 @@ body {
 }
 
 .card-item-header > h1 {
-    text-shadow: 0px 0px 10px white;
-    font-size: 3rem;
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
 .card-item-header > h2 {
-    text-shadow: 0px 0px 10px white;
-    font-size: 2rem;
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
 .card-item-header > h4 {
-    text-shadow: 0px 0px 10px white;
-    font-size: 0.75rem;
     margin: 0rem 0rem 0rem 0rem;
 }
 
 .card-item > h2 {
-    text-shadow: 0px 0px 10px white;
-    font-size: 2rem;
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
 .card-item > h3 {
-    text-shadow: 0px 0px 10px white;
-    font-size: 1.25rem;
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
-.card-item > a > img {
+.card-item > a > h3 {
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.card-item > a > picture > img {
     width: 35rem;
     height: auto;
 }
 
 .card-item-footer > a {
-    text-shadow: 0px 0px 10px white;
     font-size: 1.25rem;
     margin: 0rem 0rem 0.5rem 0rem;
-}
-
-.card-item-footer > a:link, a:visited {
-    color: black;
-}
-
-.card-item-footer > a:hover {
-    color: orangered;
-    text-shadow: 0px 0px 10px black;
 }
 
 .card-item-links {
@@ -177,21 +188,27 @@ body {
     font-size: 1.25rem;
 }
 
-.card-item-links > ul > li > a {
-    /* text-decoration: none; */
-    text-shadow: 0px 0px 10px white;
-}
-
-.card-item-links > ul > li > a:link, a:visited {
-    color: black;
-}
-
-.card-item-links > ul > li > a:hover {
-    color: orangered;
-    text-shadow: 0px 0px 10px black;
-}
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 0.75rem;
+    }
+
     .card {
         max-width: 50vw;
     }
@@ -201,48 +218,30 @@ body {
     }
 
     .card-item-name-and-photo > h1 {
-        font-size: 3rem;
         margin: 0rem 0rem 0.75rem 0rem;
     }
 
     .card-item-name-and-photo > h2 {
-        font-size: 2rem;
         margin: 0rem 0rem 0.75rem 0rem;
     }
 
-    .card-item-name-and-photo > img {
+    .card-item-name-and-photo > picture > img {
         width: 15rem;
     }
 
-    .artist {
+    .card-item-information {
         margin: 0.5rem 0rem 0rem 0rem;
     }
 
-    .artist > span {
+    .card-item-information > span {
         font-size: 1rem;
     }
 
-    .artist > span > a {
+    .card-item-information > span > a {
         font-size: 1rem;
     }
 
-    .card-item-header > h1 {
-        font-size: 3rem;
-    }
-
-    .card-item-header > h4 {
-        font-size: 1rem;
-    }
-
-    .card-item > h2 {
-        font-size: 2rem;
-    }
-
-    .card-item > h3 {
-        font-size: 1.5rem;
-    }
-
-    .card-item > a > img {
+    .card-item > a > picture > img {
         width: 40rem;
     }
 
@@ -260,6 +259,26 @@ body {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
     .card {
         max-width: 50vw;
     }
@@ -269,48 +288,30 @@ body {
     }
 
     .card-item-name-and-photo > h1 {
-        font-size: 4rem;
         margin: 0rem 0rem 1rem 0rem;
     }
 
     .card-item-name-and-photo > h2 {
-        font-size: 3rem;
         margin: 0rem 0rem 1rem 0rem;
     }
 
-    .card-item-name-and-photo > img {
+    .card-item-name-and-photo > picture > img {
         width: 20rem;
     }
 
-    .artist {
+    .card-item-information {
         margin: 0.5rem 0rem 0rem 0rem;
     }
 
-    .artist > span {
+    .card-item-information > span {
         font-size: 1.5rem;
     }
 
-    .artist > span > a {
+    .card-item-information > span > a {
         font-size: 1.5rem;
     }
 
-    .card-item-header > h1 {
-        font-size: 4rem;
-    }
-
-    .card-item-header > h4 {
-        font-size: 1.5rem;
-    }
-
-    .card-item > h2 {
-        font-size: 3rem;
-    }
-
-    .card-item > h3 {
-        font-size: 2rem;
-    }
-
-    .card-item > a > img {
+    .card-item > a > picture > img {
         width: 40rem;
     }
 
@@ -328,6 +329,26 @@ body {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
     .card {
         max-width: 50vw;
     }
@@ -337,48 +358,30 @@ body {
     }
 
     .card-item-name-and-photo > h1 {
-        font-size: 6rem;
         margin: 0rem 0rem 1.5rem 0rem;
     }
 
     .card-item-name-and-photo > h2 {
-        font-size: 5rem;
         margin: 0rem 0rem 1.5rem 0rem;
     }
 
-    .card-item-name-and-photo > img {
+    .card-item-name-and-photo > picture > img {
         width: 25rem;
     }
 
-    .artist {
+    .card-item-information {
         margin: 0.5rem 0rem 0rem 0rem;
     }
 
-    .artist > span {
+    .card-item-information > span {
         font-size: 2rem;
     }
 
-    .artist > span > a {
+    .card-item-information > span > a {
         font-size: 2rem;
     }
 
-    .card-item-header > h1 {
-        font-size: 6rem;
-    }
-
-    .card-item-header > h4 {
-        font-size: 2rem;
-    }
-
-    .card-item > h2 {
-        font-size: 5rem;
-    }
-
-    .card-item > h3 {
-        font-size: 3rem;
-    }
-
-    .card-item > a > img {
+    .card-item > a > picture > img {
         width: 40rem;
     }
 
@@ -396,6 +399,26 @@ body {
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 319px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
     .card {
         max-width: 50vw;
     }
@@ -405,48 +428,30 @@ body {
     }
 
     .card-item-name-and-photo > h1 {
-        font-size: 7rem;
         margin: 0rem 0rem 2rem 0rem;
     }
 
     .card-item-name-and-photo > h2 {
-        font-size: 5rem;
         margin: 0rem 0rem 2rem 0rem;
     }
 
-    .card-item-name-and-photo > img {
+    .card-item-name-and-photo > picture > img {
         width: 30rem;
     }
 
-    .artist {
+    .card-item-information {
         margin: 1rem 0rem 0rem 0rem;
     }
 
-    .artist > span {
+    .card-item-information > span {
         font-size: 2.5rem;
     }
 
-    .artist > span > a {
+    .card-item-information > span > a {
         font-size: 2.5rem;
     }
 
-    .card-item-header > h1 {
-        font-size: 7rem;
-    }
-
-    .card-item-header > h4 {
-        font-size: 2.5rem;
-    }
-
-    .card-item > h2 {
-        font-size: 5rem;
-    }
-
-    .card-item > h3 {
-        font-size: 3rem;
-    }
-
-    .card-item > a > img {
+    .card-item > a > picture > img {
         width: 40rem;
     }
 
