@@ -110,6 +110,12 @@ body {
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
+.card-item-header > h2 {
+    text-shadow: 0px 0px 10px white;
+    font-size: 2rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
 .card-item-header > h4 {
     text-shadow: 0px 0px 10px white;
     font-size: 0.75rem;
@@ -199,6 +205,11 @@ body {
         margin: 0rem 0rem 0.75rem 0rem;
     }
 
+    .card-item-name-and-photo > h2 {
+        font-size: 2rem;
+        margin: 0rem 0rem 0.75rem 0rem;
+    }
+
     .card-item-name-and-photo > img {
         width: 15rem;
     }
@@ -259,6 +270,11 @@ body {
 
     .card-item-name-and-photo > h1 {
         font-size: 4rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    .card-item-name-and-photo > h2 {
+        font-size: 3rem;
         margin: 0rem 0rem 1rem 0rem;
     }
 
@@ -325,6 +341,11 @@ body {
         margin: 0rem 0rem 1.5rem 0rem;
     }
 
+    .card-item-name-and-photo > h2 {
+        font-size: 5rem;
+        margin: 0rem 0rem 1.5rem 0rem;
+    }
+
     .card-item-name-and-photo > img {
         width: 25rem;
     }
@@ -385,6 +406,11 @@ body {
 
     .card-item-name-and-photo > h1 {
         font-size: 7rem;
+        margin: 0rem 0rem 2rem 0rem;
+    }
+
+    .card-item-name-and-photo > h2 {
+        font-size: 5rem;
         margin: 0rem 0rem 2rem 0rem;
     }
 
