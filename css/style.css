@@ -46,7 +46,7 @@ body {
     margin: 1.25rem 0rem;
 }
 
-.name-and-photo {
+.card-item-name-and-photo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,13 +54,13 @@ body {
     text-align: center;
 }
 
-.name-and-photo > h1 {
+.card-item-name-and-photo > h1 {
     text-shadow: 0px 0px 10px white;
     font-size: 3rem;
     margin: 0rem 0rem 1rem 0rem;
 }
 
-.name-and-photo > img {
+.card-item-name-and-photo > img {
     width: 15rem;
     height: auto;
     /* mask-image:
@@ -96,7 +96,7 @@ body {
     text-shadow: 0px 0px 10px black;
 }
 
-.refsheet {
+.card-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,58 +104,58 @@ body {
     text-align: center;
 }
 
-.refsheet-header > h1 {
+.card-item-header > h1 {
     text-shadow: 0px 0px 10px white;
     font-size: 3rem;
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
-.refsheet-header > h4 {
+.card-item-header > h4 {
     text-shadow: 0px 0px 10px white;
     font-size: 0.75rem;
     margin: 0rem 0rem 0rem 0rem;
 }
 
-.refsheet > h2 {
+.card-item > h2 {
     text-shadow: 0px 0px 10px white;
     font-size: 2rem;
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
-.refsheet > h3 {
+.card-item > h3 {
     text-shadow: 0px 0px 10px white;
     font-size: 1.25rem;
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
-.refsheet > a > img {
+.card-item > a > img {
     width: 35rem;
     height: auto;
 }
 
-.refsheet-footer > a {
+.card-item-footer > a {
     text-shadow: 0px 0px 10px white;
     font-size: 1.25rem;
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
-.refsheet-footer > a:link, a:visited {
+.card-item-footer > a:link, a:visited {
     color: black;
 }
 
-.refsheet-footer > a:hover {
+.card-item-footer > a:hover {
     color: orangered;
     text-shadow: 0px 0px 10px black;
 }
 
-.links {
+.card-item-links {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.links > ul {
+.card-item-links > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,20 +167,20 @@ body {
     list-style-type: none;
 }
 
-.links > ul > li {
+.card-item-links > ul > li {
     font-size: 1.25rem;
 }
 
-.links > ul > li > a {
+.card-item-links > ul > li > a {
     /* text-decoration: none; */
     text-shadow: 0px 0px 10px white;
 }
 
-.links > ul > li > a:link, a:visited {
+.card-item-links > ul > li > a:link, a:visited {
     color: black;
 }
 
-.links > ul > li > a:hover {
+.card-item-links > ul > li > a:hover {
     color: orangered;
     text-shadow: 0px 0px 10px black;
 }
@@ -194,12 +194,12 @@ body {
         margin: 2rem 0rem;
     }
 
-    .name-and-photo > h1 {
+    .card-item-name-and-photo > h1 {
         font-size: 3rem;
         margin: 0rem 0rem 0.75rem 0rem;
     }
 
-    .name-and-photo > img {
+    .card-item-name-and-photo > img {
         width: 15rem;
     }
 
@@ -215,35 +215,35 @@ body {
         font-size: 1rem;
     }
 
-    .refsheet-header > h1 {
+    .card-item-header > h1 {
         font-size: 3rem;
     }
 
-    .refsheet-header > h4 {
+    .card-item-header > h4 {
         font-size: 1rem;
     }
 
-    .refsheet > h2 {
+    .card-item > h2 {
         font-size: 2rem;
     }
 
-    .refsheet > h3 {
+    .card-item > h3 {
         font-size: 1.5rem;
     }
 
-    .refsheet > a > img {
+    .card-item > a > img {
         width: 40rem;
     }
 
-    .refsheet-footer > a {
+    .card-item-footer > a {
         font-size: 1.5rem;
     }
 
-    .links > ul {
+    .card-item-links > ul {
         gap: 2rem;
     }
 
-    .links > ul > li > a {
+    .card-item-links > ul > li > a {
         font-size: 1.5rem;
     }
 }
@@ -257,12 +257,12 @@ body {
         margin: 3rem 0rem;
     }
 
-    .name-and-photo > h1 {
+    .card-item-name-and-photo > h1 {
         font-size: 4rem;
         margin: 0rem 0rem 1rem 0rem;
     }
 
-    .name-and-photo > img {
+    .card-item-name-and-photo > img {
         width: 20rem;
     }
 
@@ -278,35 +278,35 @@ body {
         font-size: 1.5rem;
     }
 
-    .refsheet-header > h1 {
+    .card-item-header > h1 {
         font-size: 4rem;
     }
 
-    .refsheet-header > h4 {
+    .card-item-header > h4 {
         font-size: 1.5rem;
     }
 
-    .refsheet > h2 {
+    .card-item > h2 {
         font-size: 3rem;
     }
 
-    .refsheet > h3 {
+    .card-item > h3 {
         font-size: 2rem;
     }
 
-    .refsheet > a > img {
+    .card-item > a > img {
         width: 40rem;
     }
 
-    .refsheet-footer > a {
+    .card-item-footer > a {
         font-size: 2rem;
     }
 
-    .links > ul {
+    .card-item-links > ul {
         gap: 3rem;
     }
 
-    .links > ul > li > a {
+    .card-item-links > ul > li > a {
         font-size: 2rem;
     }
 }
@@ -320,12 +320,12 @@ body {
         margin: 3rem 0rem;
     }
 
-    .name-and-photo > h1 {
+    .card-item-name-and-photo > h1 {
         font-size: 6rem;
         margin: 0rem 0rem 1.5rem 0rem;
     }
 
-    .name-and-photo > img {
+    .card-item-name-and-photo > img {
         width: 25rem;
     }
 
@@ -341,35 +341,35 @@ body {
         font-size: 2rem;
     }
 
-    .refsheet-header > h1 {
+    .card-item-header > h1 {
         font-size: 6rem;
     }
 
-    .refsheet-header > h4 {
+    .card-item-header > h4 {
         font-size: 2rem;
     }
 
-    .refsheet > h2 {
+    .card-item > h2 {
         font-size: 5rem;
     }
 
-    .refsheet > h3 {
+    .card-item > h3 {
         font-size: 3rem;
     }
 
-    .refsheet > a > img {
+    .card-item > a > img {
         width: 40rem;
     }
 
-    .refsheet-footer > a {
+    .card-item-footer > a {
         font-size: 3rem;
     }
 
-    .links > ul {
+    .card-item-links > ul {
         gap: 3rem;
     }
 
-    .links > ul > li > a {
+    .card-item-links > ul > li > a {
         font-size: 3rem;
     }
 }
@@ -383,12 +383,12 @@ body {
         margin: 4rem 0rem;
     }
 
-    .name-and-photo > h1 {
+    .card-item-name-and-photo > h1 {
         font-size: 7rem;
         margin: 0rem 0rem 2rem 0rem;
     }
 
-    .name-and-photo > img {
+    .card-item-name-and-photo > img {
         width: 30rem;
     }
 
@@ -404,35 +404,35 @@ body {
         font-size: 2.5rem;
     }
 
-    .refsheet-header > h1 {
+    .card-item-header > h1 {
         font-size: 7rem;
     }
 
-    .refsheet-header > h4 {
+    .card-item-header > h4 {
         font-size: 2.5rem;
     }
 
-    .refsheet > h2 {
+    .card-item > h2 {
         font-size: 5rem;
     }
 
-    .refsheet > h3 {
+    .card-item > h3 {
         font-size: 3rem;
     }
 
-    .refsheet > a > img {
+    .card-item > a > img {
         width: 40rem;
     }
 
-    .refsheet-footer > a {
+    .card-item-footer > a {
         font-size: 4rem;
     }
 
-    .links > ul {
+    .card-item-links > ul {
         gap: 4rem;
     }
 
-    .links > ul > li > a {
+    .card-item-links > ul > li > a {
         font-size: 4rem;
     }
 }
