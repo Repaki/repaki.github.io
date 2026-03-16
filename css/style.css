@@ -2,10 +2,14 @@ body {
     all: unset;
     font-family: sans-serif;
     color: black;
-    /* Background Gmage */
-    /* background-image: url(../images/avatar.png); */
+    /* Background Image */
+    /* background-image: url(../images/repaki_avatar.png); */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
+    /* Pattern Background Image */
+    /* background-image: url(../images/repaki_pattern.png); */
+    /* background-size: 50em; */
+    /* background-repeat: repeat; */
     /* Old Gradient */
     /* background: radial-gradient(circle at top left, dimgray, orange, orangered); */
     /* Animated Gradient */
