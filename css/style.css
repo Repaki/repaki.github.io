@@ -2,20 +2,34 @@ body {
     all: unset;
     font-family: sans-serif;
     color: black;
+
     /* Background Image */
     /* background-image: url(../images/repaki_avatar.png); */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
+
     /* Pattern Background Image */
     /* background-image: url(../images/repaki_pattern.png); */
     /* background-size: 50em; */
     /* background-repeat: repeat; */
+
     /* Old Gradient */
     /* background: radial-gradient(circle at top left, dimgray, orange, orangered); */
+
     /* Animated Gradient */
-    background: radial-gradient(circle at top left, #5e997c, #65a587, #71ba99, #77c4A0, #c76d10, #b04100, #7d2017, #912900);
-    background-size: 200% 200%;
-    animation: gradient-animation 15s ease-in-out infinite;
+    /* background: radial-gradient(circle at top left, #5e997c, #65a587, #71ba99, #77c4A0, #c76d10, #b04100, #7d2017, #912900); */
+    /* background-size: 200% 200%; */
+    /* animation: gradient-animation 15s ease-in-out infinite; */
+
+    /* Combined Pattern Background (Transparent), Darkening Layer, and Animated Gradient */
+    background: url(../images/repaki_pattern_transparent.png), /* Background Image */
+                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), /* Darkening Layer */
+                radial-gradient(circle at top left, #5e997c, #65a587, #71ba99, #77c4A0, #c76d10, #b04100, #7d2017, #912900); /* Gradient */
+    background-size: 40em, /* Background Image */
+                     100% 100%, /* Darkening Layer */
+                     200% 200%; /* Gradient */
+    background-repeat: repeat;
+    animation: image-background-gradient-animation 15s ease-in-out infinite;
 }
 
 h1 {
@@ -481,5 +495,23 @@ a:hover {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@keyframes image-background-gradient-animation {
+    0% {
+        background-position: 0% 0%, /* Background Image */
+                             0% 0%, /* Darkening Layer */
+                             0% 50%; /* Gradient */
+    }
+    50% {
+        background-position: 0% 0%, /* Background Image */
+                             0% 0%, /* Darkening Layer */
+                             100% 50%; /* Gradient */
+    }
+    100% {
+        background-position: 0% 0%, /* Background Image */
+                             0% 0%, /* Darkening Layer */
+                             0% 50%; /* Gradient */
     }
 }
