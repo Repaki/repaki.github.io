@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, proxy-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <title>Pattern Preview</title>
+        <style>
+            body {
+                background: url(images/repaki_pattern_transparent.png), /* Background Image */
+                            linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), /* Darkening Layer */
+                            radial-gradient(circle at top left, #5e997c, #65a587, #71ba99, #77c4A0, #c76d10, #b04100, #7d2017, #912900); /* Gradient */
+                background-size: 30em, /* Background Image */
+                                 100% 100%, /* Darkening Layer */
+                                 200% 200%; /* Gradient */
+                background-repeat: repeat;
+                animation: image-background-gradient-animation 15s ease-in-out infinite;
+            }
+            @keyframes image-background-gradient-animation {
+                0% {
+                    background-position: 0% 0%, /* Background Image */
+                                        0% 0%, /* Darkening Layer */
+                                        0% 50%; /* Gradient */
+                }
+                50% {
+                    background-position: 0% 0%, /* Background Image */
+                                        0% 0%, /* Darkening Layer */
+                                        100% 50%; /* Gradient */
+                }
+                100% {
+                    background-position: 0% 0%, /* Background Image */
+                                        0% 0%, /* Darkening Layer */
+                                        0% 50%; /* Gradient */
+                }
+            }
+        </style>
+    </head>
+    <body></body>
+</html>
