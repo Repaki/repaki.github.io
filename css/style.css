@@ -21,7 +21,7 @@ body {
     /* background-size: 200% 200%; */
     /* animation: gradient-animation 15s ease-in-out infinite; */
 
-    /* Combined Pattern Background (Transparent), Darkening Layer, and Animated Gradient */
+    /* Combined Tiling Background (Transparent), Darkening Layer, and Animated Gradient */
     background: url(../images/repaki_pattern_transparent.png), /* Background Image */
                 linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), /* Darkening Layer */
                 radial-gradient(circle at top left, #5e997c, #65a587, #71ba99, #77c4A0, #c76d10, #b04100, #7d2017, #912900); /* Gradient */
